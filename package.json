@@ -1,6 +1,7 @@
 {
   "name": "mymodule",
   "version": "0.0.1",
+  "license": "MIT",
   "main": "dist",
   "files": [
     "dist"
@@ -17,6 +18,7 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
-    "menhera": "^0.6.7-rc2"
+    "menhera": "^0.6.7-rc9",
+    "menhera-cli": "^0.3.1-rc4"
   }
 }

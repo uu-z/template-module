@@ -1,6 +1,6 @@
-import Menhera from "menhera";
+import Mhr from "menhera";
 
-const _ = new Menhera({
+Mhr.$use({
   _hooks: {
     say: {
       _({ _val }) {
@@ -8,7 +8,6 @@ const _ = new Menhera({
       }
     }
   }
-});
-
-_.$use({ say: "Hello World" });
-_.$use([{ say: "foo" }, { say: "bar" }]);
+})
+  .$use({ say: "Hello World" })
+  .$use([{ say: "Hello" }, { say: "World" }]);
