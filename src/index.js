@@ -1,13 +1,8 @@
-import Mhr from "menhera";
-
-Mhr.$use({
+export default {
+  name: "myModule",
   _hooks: {
-    say: {
-      _({ _val }) {
-        console.log(_val);
-      }
+    say({ _val }) {
+      console.log(_val);
     }
   }
-})
-  .$use({ say: "Hello World" })
-  .$use([{ say: "Hello" }, { say: "World" }]);
+};
